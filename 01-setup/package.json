@@ -1,0 +1,14 @@
+{
+  "name": "books-api",
+  "version": "1.0.0",
+  "description": "A simple and testable books API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Vinci <diego.vinci@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
