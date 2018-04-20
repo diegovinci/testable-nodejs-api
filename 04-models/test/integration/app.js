@@ -1,4 +1,3 @@
-
 describe('Routes Books', () => {
   const books = app.datasource.models.books;
   const defaultBook = {
