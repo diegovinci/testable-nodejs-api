@@ -1,7 +1,6 @@
-
 describe('Routes Books', () => {
-  // const books = app.datasource.models.books;
-  const { datasource: { models: books } } = app;
+  console.log('integration test using app');
+  const { datasource: { models: { books } } } = app;
   const defaultBook = {
     id: 1,
     name: 'Default Book',

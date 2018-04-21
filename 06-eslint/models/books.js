@@ -1,5 +1,5 @@
 const books = (sequelize, dataType) => {
-  const booksModel = sequelize.define('books', {
+  const booksSchema = sequelize.define('books', {
     id: {
       type: dataType.INTEGER,
       primaryKey: true,
@@ -13,7 +13,7 @@ const books = (sequelize, dataType) => {
       },
     },
   });
-  return booksModel;
+  return booksSchema;
 };
 
 module.exports = books;

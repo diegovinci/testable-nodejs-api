@@ -19,8 +19,8 @@ const loadModels = (sequelize) => {
 
 const dataSource = (app) => {
   if (!database) {
+    // const config = app.config;
     const { config } = app;
-
     const sequelize = new Sequelize(
       config.database,
       config.username,

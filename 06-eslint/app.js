@@ -1,7 +1,7 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const config = require('./config/config');
 const datasource = require('./config/datasource');
+const bodyParser = require('body-parser');
 
 const app = express();
 
@@ -11,7 +11,7 @@ app.set('port', 7000);
 app.use(bodyParser.json());
 
 // Model de books inicializado pelo sequelize
-const { datasource: { models: books } } = app;
+const { datasource: { models: { books } } } = app;
 
 app.route('/books')
   .get((req, res) => {
