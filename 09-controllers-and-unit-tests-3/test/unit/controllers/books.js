@@ -75,7 +75,7 @@ describe('Controllers: Books', () => {
       const booksController = new BooksController(books);
       return booksController.create(requestBody)
         .then((response) => {
-          expect(response.statusCode).to.be.eql(201)
+          expect(response.statusCode).to.be.eql(201);
           expect(response.data).to.be.eql(expectedResponse);
         });
     });
@@ -124,7 +124,8 @@ describe('Controllers: Books', () => {
 
       const booksController = new BooksController(books);
       return booksController.destroy({ id: 1 })
-        .then(response => expect(response.statusCode).to.be.eql(204)); // Validadndo status code correto
+        // Validadndo status code correto
+        .then(response => expect(response.statusCode).to.be.eql(204));
     });
   });
 });
